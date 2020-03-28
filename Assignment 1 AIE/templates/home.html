@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="banner">My Application</h1>
+        <div class="section editor">
+          <label for="student_id">First Name
+              <input id="student_id" type="text" />
+          </label>
+          <br />
+            <label for="fname">Student ID
+                <input id="fname" type="text" />
+            </label>
+            <br />
+            <label for="lname">Last Name
+                <input id="lname" type="text" />
+            </label>
+            <br />
+            <label for="DOB">Date of Birth
+                <input id="DOB" type="text" />
+            </label>
+            <br />
+            <label for="amount_due">Amount Due
+                <input id="amount_due" type="text" />
+            </label>
+            <button id="create">Create</button>
+            <button id="update">Update</button>
+            <button id="delete">Delete</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="people">
+            <table>
+                <caption>People</caption>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Date of Birth</th>
+                        <th>Amount Due</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="error">
+        </div>
+    </div>
+</body>
+<script src="static/js/home.js"></script>
+</html>
